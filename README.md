@@ -39,6 +39,41 @@ This repository contains my daily Spring learning and revision progress, coverin
 - **Implementation:**
   - Defining aspects using `@Aspect` and weaving them into the application.
   - XML or Java-based configuration for enabling AOP (`<aop:aspectj-autoproxy>` or `@EnableAspectJAutoProxy`).
+### 4. Spring Data JPA
+- **Key Features**:
+  - Repository abstraction for database operations.
+  - Query creation from method names (e.g., `findByName`).
+  - Support for custom queries with `@Query`.
+- **Transaction Management**: Automatic handling with `@Transactional`.
+
+### 5. Spring Data REST
+- **Purpose**: Automatically exposes RESTful APIs for JPA repositories.
+- **Features**:
+  - HAL explorer for navigating REST APIs.
+  - Custom endpoints and projections.
+
+### 6. Spring Security
+- **Authentication**: Supports username/password and role-based access.
+- **Authorization**: Secures endpoints with roles (`@PreAuthorize`, `@Secured`).
+- **Thymeleaf Integration**: `spring-security` extras for secure templates.
+
+### 7. RESTful APIs
+- **Development**:
+  - Creating endpoints with `@RestController`.
+  - JSON serialization and validation with `@RequestBody`, `@Valid`.
+- **Validation**: Using `@Valid` and `@NotNull` annotations.
+- **Response Handling**: Returning appropriate HTTP status codes (`ResponseEntity`).
+
+### 8. Thymeleaf Templates
+- **Dynamic Views**:
+  - HTML templates with Spring expressions (`th:text`, `th:if`).
+  - Form validation and error handling.
+
+### 9. Database Integration
+- **PostgreSQL**:
+  - Configured using Spring Boot starter dependencies.
+  - Managed database migrations.
+
 
 ## Folder Structure
 
@@ -60,6 +95,44 @@ Examples of:
 - Implementing different types of advice (`@Before`, `@Around`, etc.).
 - Configuring AOP using both annotations and XML.
 
+## Featured Project: SpringApplication1
 
+This is a fully implemented school management application showcasing advanced Spring concepts. The application leverages various Spring features to provide a robust backend solution.
+
+### Key Features
+- **AOP (Aspect-Oriented Programming)**:
+  - Logging, performance monitoring, and method-level interception.
+- **Spring Security**:
+  - Secure endpoints with user authentication and authorization.
+- **Spring Data REST with HAL**:
+  - Exposes RESTful APIs with hypermedia (HAL) support for easy navigation.
+- **Spring Data JPA**:
+  - Simplified database interactions using JPA repositories.
+- **Validation**:
+  - Input validation with `spring-boot-starter-validation`.
+- **REST APIs**:
+  - Designed and implemented RESTful endpoints for CRUD operations.
+- **Thymeleaf Integration**:
+  - For creating dynamic views and templates.
+- **PostgreSQL**:
+  - Used as the database backend.
+
+
+---
+
+
+
+### Features:
+- CRUD operations for managing students, teachers, and courses.
+- Role-based access control with secure endpoints.
+- Auto-generated REST APIs with HAL explorer support.
+- Dynamic front-end templates with form validation.
+
+### Build & Configuration
+- **Java Version**: 21
+- **Maven Plugins**:
+  - Configured with `maven-compiler-plugin` for Java 21 compatibility.
+
+---
 
 Stay tuned for more updates as I continue to revise and expand my Spring knowledge!
